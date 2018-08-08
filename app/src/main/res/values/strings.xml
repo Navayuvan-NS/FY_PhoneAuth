@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FY_PhoneAuth</string>
+    <string name="phone_number">Phone number</string>
+    <string name="button">Button</string>
+    <string name="phone_number_verification">Phone Number Verification</string>
+    <string name="create_account">Create Account</string>
+</resources>

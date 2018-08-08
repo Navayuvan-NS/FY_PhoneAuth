@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "330585641853",
+    "firebase_url": "https://fyphoneauth.firebaseio.com",
+    "project_id": "fyphoneauth",
+    "storage_bucket": "fyphoneauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330585641853:android:2f21f2cc5638fe45",
+        "android_client_info": {
+          "package_name": "com.example.root.fy_phoneauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330585641853-r7tnl2phie7ld705nn8344utu9mepn94.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.fy_phoneauth",
+            "certificate_hash": "1a3c019accf467dc49c1b079e1a2078f127dd244"
+          }
+        },
+        {
+          "client_id": "330585641853-lfkctkdj4bskahipo8o3dh9iufik31pn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhJ4Cr8I-4knqqyNCPA4JCA-EPy8AV7qk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330585641853-lfkctkdj4bskahipo8o3dh9iufik31pn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

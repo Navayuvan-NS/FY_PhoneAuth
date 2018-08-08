@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">330585641853-lfkctkdj4bskahipo8o3dh9iufik31pn.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://fyphoneauth.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">330585641853</string>
+    <string name="google_api_key" translatable="false">AIzaSyBhJ4Cr8I-4knqqyNCPA4JCA-EPy8AV7qk</string>
+    <string name="google_app_id" translatable="false">1:330585641853:android:2f21f2cc5638fe45</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBhJ4Cr8I-4knqqyNCPA4JCA-EPy8AV7qk</string>
+    <string name="google_storage_bucket" translatable="false">fyphoneauth.appspot.com</string>
+    <string name="project_id" translatable="false">fyphoneauth</string>
+</resources>
