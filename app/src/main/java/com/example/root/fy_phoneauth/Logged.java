@@ -19,7 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class Logged extends PhoneAuth {
+public class Logged extends PhoneAuth{
 
     private EditText mPassword;
     public EditText mConformPassword;
@@ -63,10 +63,37 @@ public class Logged extends PhoneAuth {
         else{
 
             mPasswordProgressbar.setVisibility(View.VISIBLE);
-            PhoneAuth a = new PhoneAuth(password);
+            createuser();
         }
 
-    }
 
+    }
+    public void createuser(){
+       // phonenumber = "+919944937052@gmail.com";
+        new PhoneAuth();
+        phonenumber = phnno;
+        phonenumber = phonenumber+"@gmail.com";
+        Toast.makeText(Logged.this,phonenumber,
+                Toast.LENGTH_SHORT).show();
+        mAuth.createUserWithEmailAndPassword(phonenumber, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            startActivity(new Intent(Logged.this,LoggedSuccess.class));
+                            finish();
+                            mPasswordProgressbar.setVisibility(View.INVISIBLE);
+
+                        } else {
+
+                            Toast.makeText(Logged.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+                            mPasswordProgressbar.setVisibility(View.INVISIBLE);
+                        }
+                    }
+                });
+
+    }
 
 }

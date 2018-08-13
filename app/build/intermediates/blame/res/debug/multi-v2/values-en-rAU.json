@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/root/AndroidStudioProjects/Phone_Auth/FY_PhoneAuth/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "/home/ns/AndroidStudioProjects/FY_PhoneAuth/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/524186dbc4005414087e4332b99a7e26/res/values-en-rAU/values-en-rAU.xml",
+                    "source": "/home/ns/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/3d2d3c0e4a743cdf53f45d932fc5fb3c/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/root/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha1.aar/b70ce356082e7c41973a8bd3e14b769f/res/values-en-rAU/values-en-rAU.xml",
+                    "source": "/home/ns/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha1.aar/bd596c36d24f8646a370769824c8544b/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

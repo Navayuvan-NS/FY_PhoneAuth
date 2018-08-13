@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "330585641853-uuh5u0u90m9r5otajnofjjjn6pm81cmb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.fy_phoneauth",
+            "certificate_hash": "7319d2b57def0205b8b93594f3e42beab0cfc977"
+          }
+        },
+        {
           "client_id": "330585641853-lfkctkdj4bskahipo8o3dh9iufik31pn.apps.googleusercontent.com",
           "client_type": 3
         }

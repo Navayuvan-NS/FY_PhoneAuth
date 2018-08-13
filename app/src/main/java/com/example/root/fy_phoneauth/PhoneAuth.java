@@ -22,7 +22,7 @@ public class PhoneAuth extends AppCompatActivity {
     public EditText mPhoneEditText;
     private Button mSendButton;
     private TextView mErrorText;
-    public String phnno;
+    public static String phnno;
     private LinearLayout mPhoneLayout;
     private String passwd;
 
@@ -80,4 +80,3 @@ public class PhoneAuth extends AppCompatActivity {
     }
 
 }
-
