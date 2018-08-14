@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,7 +30,7 @@ public class PhoneAuth extends AppCompatActivity {
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallBacks;
 
     private FirebaseAuth mAuth;
-
+    private ProgressBar progressBar;
 
 
     @Override
@@ -44,12 +45,14 @@ public class PhoneAuth extends AppCompatActivity {
         mPhoneLayout = findViewById(R.id.PhoneLayout);
         mAuth = FirebaseAuth.getInstance();
 
+        progressBar = findViewById(R.id.PhoneAuthprogressBar);
+
         mSendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                mPhoneEditText.setEnabled(false);
-                mSendButton.setEnabled(false);
+               // mPhoneEditText.setEnabled(false);
+               // mSendButton.setEnabled(false);
 
                 phnno = mPhoneEditText.getText().toString();
                 phnno = "+91" + phnno;
@@ -61,11 +64,13 @@ public class PhoneAuth extends AppCompatActivity {
                         PhoneAuth.this,
                         mCallBacks
                 );
+                progressBar.setVisibility(View.VISIBLE);
             }
         });
         mCallBacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             @Override
             public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
+                progressBar.setVisibility(View.INVISIBLE);
                 startActivity(new Intent(PhoneAuth.this, Logged.class));
                 finish();
             }

@@ -69,7 +69,6 @@ public class Logged extends PhoneAuth{
 
     }
     public void createuser(){
-       // phonenumber = "+919944937052@gmail.com";
         new PhoneAuth();
         phonenumber = phnno;
         phonenumber = phonenumber+"@gmail.com";
@@ -80,6 +79,7 @@ public class Logged extends PhoneAuth{
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+
                             FirebaseUser user = mAuth.getCurrentUser();
                             startActivity(new Intent(Logged.this,LoggedSuccess.class));
                             finish();
