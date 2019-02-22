@@ -19,7 +19,7 @@ public class LoggedSuccess extends AppCompatActivity {
     public void logoutBtn(View view) {
 
         FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(LoggedSuccess.this, PhoneAuth.class));
+        startActivity(new Intent(LoggedSuccess.this, Login.class));
 
     }
 }

@@ -7,7 +7,7 @@
     tools:context=".Login">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/phoneNumberLoginEditText"
         android:layout_width="339dp"
         android:layout_height="59dp"
         android:layout_marginStart="8dp"
@@ -15,29 +15,31 @@
         android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:autofillHints="@string/phone_number"
         android:ems="10"
         android:hint="@string/phone_number"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginLabel"
-        android:autofillHints="@string/phone_number"/>
+        tools:ignore="TextFields" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/passwordLoginEditText"
         android:layout_width="337dp"
         android:layout_height="52dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="84dp"
+        android:autofillHints="@string/password"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="@+id/phoneNumberLoginEditText"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        android:autofillHints="@string/password"/>
+        app:layout_constraintStart_toStartOf="@+id/phoneNumberLoginEditText"
+        tools:ignore="RtlHardcoded" />
 
     <Button
         android:id="@+id/button"
@@ -47,11 +49,12 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginBottom="208dp"
         android:text="@string/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="loginBtn"/>
 
     <TextView
         android:id="@+id/loginLabel"

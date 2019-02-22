@@ -7,6 +7,7 @@ INJECTED from /home/ns/My_works/FY_PhoneAuth/app/src/main/AndroidManifest.xml:2:
 MERGED from [com.android.support:appcompat-v7:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8d8f07a9364a92251c8cfe9d4ee8fa5a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/ns/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c54dfcfd8545c4ab7321373a09803f9d/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/ns/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/d9a66f7f4ef575541bbd2665683076dd/AndroidManifest.xml:17:1-42:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/b5969c3d568851cb12fb78c2503816ba/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/ns/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/40e729e1e671879c8227896d9dcd5804/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/ns/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/be3e1ad23d7a82e0086fbf42f8913aab/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:16.0.1] /home/ns/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ea0e292f739ab4bcf39b99076f59c594/AndroidManifest.xml:17:1-29:12
@@ -36,10 +37,10 @@ MERGED from [com.android.support:documentfile:28.0.0] /home/ns/.gradle/caches/tr
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/d6347a6debb4d9974f2f9e4871326c44/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/3f21c670b8401cdc2bc36741949c7cd1/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/78a4218f142ed10a188910a4ec4d1b16/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/eb9f44c70bd3987407ec5fdf1101581e/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4720916ffba57068cb3219b14ce075fe/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7d7f4565feb802d24fd7f8e45a7faf81/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/36f27dfecf2c03b33ca937a4cbfbca51/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/eb9f44c70bd3987407ec5fdf1101581e/AndroidManifest.xml:17:1-22:12
 INJECTED from /home/ns/My_works/FY_PhoneAuth/app/src/main/AndroidManifest.xml:2:1-27:12
 INJECTED from /home/ns/My_works/FY_PhoneAuth/app/src/main/AndroidManifest.xml:2:1-27:12
 INJECTED from /home/ns/My_works/FY_PhoneAuth/app/src/main/AndroidManifest.xml:2:1-27:12
@@ -139,6 +140,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/ns/.g
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/ns/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c54dfcfd8545c4ab7321373a09803f9d/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/ns/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/d9a66f7f4ef575541bbd2665683076dd/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:16.1.0] /home/ns/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.1.0.aar/d9a66f7f4ef575541bbd2665683076dd/AndroidManifest.xml:21:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/b5969c3d568851cb12fb78c2503816ba/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/b5969c3d568851cb12fb78c2503816ba/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/ns/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/40e729e1e671879c8227896d9dcd5804/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:16.0.1] /home/ns/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/40e729e1e671879c8227896d9dcd5804/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /home/ns/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/be3e1ad23d7a82e0086fbf42f8913aab/AndroidManifest.xml:5:5-44
@@ -197,14 +200,14 @@ MERGED from [com.android.support:print:28.0.0] /home/ns/.gradle/caches/transform
 MERGED from [com.android.support:print:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/3f21c670b8401cdc2bc36741949c7cd1/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/78a4218f142ed10a188910a4ec4d1b16/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/78a4218f142ed10a188910a4ec4d1b16/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/eb9f44c70bd3987407ec5fdf1101581e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/eb9f44c70bd3987407ec5fdf1101581e/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4720916ffba57068cb3219b14ce075fe/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/4720916ffba57068cb3219b14ce075fe/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7d7f4565feb802d24fd7f8e45a7faf81/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/7d7f4565feb802d24fd7f8e45a7faf81/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/36f27dfecf2c03b33ca937a4cbfbca51/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /home/ns/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/36f27dfecf2c03b33ca937a4cbfbca51/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/eb9f44c70bd3987407ec5fdf1101581e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /home/ns/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/eb9f44c70bd3987407ec5fdf1101581e/AndroidManifest.xml:20:5-44
 INJECTED from /home/ns/My_works/FY_PhoneAuth/app/src/main/AndroidManifest.xml
 INJECTED from /home/ns/My_works/FY_PhoneAuth/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
