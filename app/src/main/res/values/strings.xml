@@ -4,4 +4,6 @@
     <string name="button">Button</string>
     <string name="phone_number_verification">Phone Number Verification</string>
     <string name="create_account">Create Account</string>
+    <string name="logged_in_successfully">Logged In Successfully</string>
+    <string name="logout">Logout</string>
 </resources>

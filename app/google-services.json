@@ -15,11 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "330585641853-r7tnl2phie7ld705nn8344utu9mepn94.apps.googleusercontent.com",
+          "client_id": "330585641853-vsr4ej76dm3hd7p1cd191qp67sj2sjbr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.root.fy_phoneauth",
-            "certificate_hash": "1a3c019accf467dc49c1b079e1a2078f127dd244"
+            "certificate_hash": "ec56760de196c9ab3fb1f6102241c62d2f91c383"
           }
         },
         {
@@ -28,6 +28,22 @@
           "android_info": {
             "package_name": "com.example.root.fy_phoneauth",
             "certificate_hash": "7319d2b57def0205b8b93594f3e42beab0cfc977"
+          }
+        },
+        {
+          "client_id": "330585641853-r7tnl2phie7ld705nn8344utu9mepn94.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.fy_phoneauth",
+            "certificate_hash": "1a3c019accf467dc49c1b079e1a2078f127dd244"
+          }
+        },
+        {
+          "client_id": "330585641853-qng5mni52m6o2u10blb2ie3otpcn7h06.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.fy_phoneauth",
+            "certificate_hash": "b93295074e1a6c4184ba5a065e30b3e417def275"
           }
         },
         {
