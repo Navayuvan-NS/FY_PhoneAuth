@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ns/AndroidStudioProjects/FY_PhoneAuth/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "/home/ns/My_works/FY_PhoneAuth/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "/home/ns/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/3d2d3c0e4a743cdf53f45d932fc5fb3c/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "source": "/home/ns/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8d8f07a9364a92251c8cfe9d4ee8fa5a/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
