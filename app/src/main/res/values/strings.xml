@@ -6,4 +6,6 @@
     <string name="create_account">Create Account</string>
     <string name="logged_in_successfully">Logged In Successfully</string>
     <string name="logout">Logout</string>
+    <string name="send_code">Send Code</string>
+    <string name="verify_your_phone_number">Verify your Phone number</string>
 </resources>
