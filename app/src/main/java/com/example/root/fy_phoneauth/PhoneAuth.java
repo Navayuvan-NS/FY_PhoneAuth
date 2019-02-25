@@ -51,9 +51,6 @@ public class PhoneAuth extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-               // mPhoneEditText.setEnabled(false);
-               // mSendButton.setEnabled(false);
-
                 phnno = mPhoneEditText.getText().toString();
                 phnno = "+91" + phnno;
 
@@ -84,4 +81,8 @@ public class PhoneAuth extends AppCompatActivity {
         };
     }
 
+    public void NavigateLoginBtn(View view) {
+
+        startActivity(new Intent(PhoneAuth.this, Login.class));
+    }
 }
