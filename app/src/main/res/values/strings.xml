@@ -10,4 +10,20 @@
     <string name="verify_your_phone_number">Verify your Phone number</string>
     <string name="password">password</string>
     <string name="login">login</string>
+    <string name="email_id">email id</string>
+    <string name="verification">Verification</string>
+    <string name="forget_password">forget password</string>
+    <string name="create_an_account">create an account</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="Reset">Reset</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings</string>
+    <string name="change">Change</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="are_you_sure_want_to_delete_your_account">Are you sure want to delete your account?</string>
+    <string name="new_email">New email</string>
+    <string name="update">Update</string>
+    <string name="login1">Login</string>
 </resources>

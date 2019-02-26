@@ -18,6 +18,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Logged extends PhoneAuth{
 
@@ -31,12 +33,28 @@ public class Logged extends PhoneAuth{
 
     private FirebaseAuth mAuth;
 
+    private String email_id;
 
+    private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+
+    private DatabaseReference mRoot = firebaseDatabase.getReference();
+
+    private DatabaseReference mUsers = mRoot.child("Users");
+
+    private DatabaseReference mThisUser;
+
+    private DatabaseReference mThisUserEmail;
+
+    private DatabaseReference mThisUserPhnNo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logged);
+
+
+        email_id = getIntent().getStringExtra("EMAIL_ID");
+
         mPassword = findViewById(R.id.PasswordEditText);
         mConformPassword = findViewById(R.id.ConformPasswordEditText);
         mPasswordProgressbar = findViewById(R.id.PasswordprogressBar);
@@ -70,24 +88,37 @@ public class Logged extends PhoneAuth{
     }
     public void createuser(){
         new PhoneAuth();
-        phonenumber = phnno;
-        phonenumber = phonenumber+"@gmail.com";
+        //phonenumber = phnno;
+        //phonenumber = phonenumber+"@gmail.com";
         Toast.makeText(Logged.this,phonenumber,
                 Toast.LENGTH_SHORT).show();
-        mAuth.createUserWithEmailAndPassword(phonenumber, password)
+        mAuth.createUserWithEmailAndPassword(getIntent().getStringExtra("EMAIL_ID"), password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
 
                             FirebaseUser user = mAuth.getCurrentUser();
-                            startActivity(new Intent(Logged.this,LoggedSuccess.class));
+                            mThisUser= mUsers.child(user.getUid());
+
+                            mThisUserEmail = mThisUser.child("Email ID");
+
+                            mThisUserPhnNo = mThisUser.child("Phone Number");
+
+                            mThisUserEmail.setValue(getIntent().getStringExtra("EMAIL_ID"));
+
+                            mThisUserPhnNo.setValue(getIntent().getStringExtra("PHN_NO"));
+
+                            Intent intent = new Intent(Logged.this,LoggedSuccess.class);
+                            //intent.putExtra("EMAIL_ID", email_id);
+                            //intent.putExtra("PHN_NO", getIntent().getStringExtra("PHN_NO"));
+                            startActivity(intent);
                             finish();
                             mPasswordProgressbar.setVisibility(View.INVISIBLE);
 
                         } else {
 
-                            Toast.makeText(Logged.this, "Authentication failed.",
+                            Toast.makeText(Logged.this, "Account already exists..!",
                                     Toast.LENGTH_SHORT).show();
                             mPasswordProgressbar.setVisibility(View.INVISIBLE);
                         }

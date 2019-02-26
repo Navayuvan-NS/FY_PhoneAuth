@@ -15,7 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Login extends AppCompatActivity {
 
-    private EditText phoneNumberLogin, passwordLogin;
+    private EditText EmailLogin, passwordLogin;
     private FirebaseAuth mAuth;
 
     @Override
@@ -23,7 +23,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        phoneNumberLogin = findViewById(R.id.phoneNumberLoginEditText);
+        EmailLogin = findViewById(R.id.phoneNumberLoginEditText);
 
         passwordLogin = findViewById(R.id.passwordLoginEditText);
 
@@ -33,19 +33,18 @@ public class Login extends AppCompatActivity {
 
     public void loginBtn(View view) {
 
-        String phoneNumber = phoneNumberLogin.getText().toString();
+        String emailLogin = EmailLogin.getText().toString();
 
         String password = passwordLogin.getText().toString();
 
-        phoneNumber = "+91" + phoneNumber + "@gmail.com";
 
-        FirebaseSignin(phoneNumber, password);
+        FirebaseSignin(emailLogin, password);
 
     }
 
-    public void FirebaseSignin(String phoneNumber, String password){
+    public void FirebaseSignin(String emailLogin, String password){
 
-        mAuth.signInWithEmailAndPassword(phoneNumber, password)
+        mAuth.signInWithEmailAndPassword(emailLogin, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -64,6 +63,17 @@ public class Login extends AppCompatActivity {
                         // ...
                     }
                 });
+
+    }
+
+    public void forgetPasswdBtn(View view) {
+
+        startActivity(new Intent(Login.this, forgetPassword.class));
+    }
+
+    public void createAnAccountBtn(View view) {
+
+        startActivity(new Intent(Login.this, PhoneAuth.class));
 
     }
 }

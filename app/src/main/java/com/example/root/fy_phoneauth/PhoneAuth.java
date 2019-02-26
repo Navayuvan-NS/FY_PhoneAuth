@@ -15,6 +15,8 @@ import com.google.firebase.FirebaseException;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.concurrent.TimeUnit;
 
@@ -26,12 +28,12 @@ public class PhoneAuth extends AppCompatActivity {
     public static String phnno;
     private LinearLayout mPhoneLayout;
     private String passwd;
+    private EditText emailtext;
 
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallBacks;
 
     private FirebaseAuth mAuth;
     private ProgressBar progressBar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,13 @@ public class PhoneAuth extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         progressBar = findViewById(R.id.PhoneAuthprogressBar);
+
+        emailtext = findViewById(R.id.emailIdEditText);
+
+
+      //  mUsers.child(FirebaseAuth.getInstance().getUid()).child("Email").setValue(emailtext.getText().toString());
+
+
 
         mSendButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,7 +77,10 @@ public class PhoneAuth extends AppCompatActivity {
             @Override
             public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
                 progressBar.setVisibility(View.INVISIBLE);
-                startActivity(new Intent(PhoneAuth.this, Logged.class));
+                Intent intent = new Intent(PhoneAuth.this, Logged.class);
+                intent.putExtra("EMAIL_ID", emailtext.getText().toString());
+                intent.putExtra("PHN_NO", mPhoneEditText.getText().toString());
+                startActivity(intent);
                 finish();
             }
 
